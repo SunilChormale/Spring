@@ -10,9 +10,14 @@ public class BinarySearchImpl {
 	
 	@Autowired
 	private SortAlgorithm sortAlgorithm;
-
-
-	//SETTER INJECTION
+	
+	//Constructor Injection
+	/*
+	 * public BinarySearchImpl(SortAlgorithm sortAlgorithm) { this.sortAlgorithm =
+	 * sortAlgorithm; }
+	 */
+	
+	//Setter Injection
 	/*
 	 * public void setSortAlgorithm(SortAlgorithm sortAlgorithm) {
 	 * this.sortAlgorithm = sortAlgorithm; }
