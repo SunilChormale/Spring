@@ -1,6 +1,7 @@
 package com.sunil.spring.basics.springbasics;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 // Setter Injection and (No Setter and No Constructor Injection)
@@ -10,7 +11,8 @@ public class BinarySearchImpl {
 	
 
 	@Autowired
-	private SortAlgorithm bubbleSortAlgorithm;
+	@Qualifier("Bubble")
+	private SortAlgorithm sortAlgorithm;
 	
 	//Dependency Injection using ClassName as Variable name.
 	/*
@@ -34,8 +36,8 @@ public class BinarySearchImpl {
 	
 	public int binarySearch(int[] numbers, int numberToSearchFor) {
 		
-		bubbleSortAlgorithm.sort(numbers);
-		System.out.println(bubbleSortAlgorithm);
+		sortAlgorithm.sort(numbers);
+		System.out.println(sortAlgorithm);
 		return 1;
 	}
 }
