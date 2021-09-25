@@ -1,6 +1,6 @@
 Spring Background working:
 
-1) It searches for the in the package for the @Component anotated class
+1) It searches in the package for the @Component anotated class
 ClassPathBeanDefinitionScanner   : Identified candidate component class: file [C:\Users\User\OneDrive\Desktop\Sunil\SpringBoot\springbasics\springbasics\target\classes\com\sunil\spring\basics\springbasics\BinarySearchImpl.class]
 ClassPathBeanDefinitionScanner   : Identified candidate component class: file [C:\Users\User\OneDrive\Desktop\Sunil\SpringBoot\springbasics\springbasics\target\classes\com\sunil\spring\basics\springbasics\BubbleSortAlgorithm.class]
 
