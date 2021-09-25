@@ -8,8 +8,15 @@ import org.springframework.stereotype.Component;
 @Component
 public class BinarySearchImpl {
 	
+
 	@Autowired
-	private SortAlgorithm sortAlgorithm;
+	private SortAlgorithm bubbleSortAlgorithm;
+	
+	//Dependency Injection using ClassName as Variable name.
+	/*
+	 * @Autowired 
+	 * private SortAlgorithm bubbleSortAlgorithm;
+	 */
 	
 	//Constructor Injection
 	/*
@@ -27,8 +34,8 @@ public class BinarySearchImpl {
 	
 	public int binarySearch(int[] numbers, int numberToSearchFor) {
 		
-		sortAlgorithm.sort(numbers);
-		System.out.println(sortAlgorithm);
+		bubbleSortAlgorithm.sort(numbers);
+		System.out.println(bubbleSortAlgorithm);
 		return 1;
 	}
 }
