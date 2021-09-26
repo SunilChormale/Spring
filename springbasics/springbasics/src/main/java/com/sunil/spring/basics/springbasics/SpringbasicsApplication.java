@@ -21,6 +21,11 @@ public class SpringbasicsApplication {
 		//Here we wanted the bean of BinarySearchImpl 
 		BinarySearchImpl binarySearch = applicationContext.getBean(BinarySearchImpl.class);
 		
+		BinarySearchImpl binarySearch1 = applicationContext.getBean(BinarySearchImpl.class);
+		
+		System.out.println(binarySearch);
+		System.out.println(binarySearch1);
+		
 		int result = binarySearch.binarySearch(new int[]{1,2,3}, 3);
 		
 		System.out.println(result);
