@@ -1,10 +1,9 @@
 package com.sunil.spring.basics.springbasics.basic;
 
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Primary;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 @Qualifier("Quick")
 public class QuickSortAlgorithm implements SortAlgorithm{
 	public int[] sort(int[] numbers) {

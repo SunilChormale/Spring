@@ -7,7 +7,8 @@
            http://www.springframework.org/schema/context
            http://www.springframework.org/schema/context/spring-context.xsd">
 
-  <!-- This will print the all available beans in the base-package  -->
+  <!-- This will print the all available beans in the base-package 
+   -->
   <context:component-scan base-package="com.sunil.spring.basics.springbasics"/>
   
   <bean id="xmlJdbcConnection" class="com.sunil.spring.basics.springbasics.xml.XmlJdbcConnection">
